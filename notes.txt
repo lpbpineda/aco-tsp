@@ -1,0 +1,50 @@
+# # 
+# ANT COLONY OPTIMIZATION
+#   - aka swarm optimization
+#   - about the behavior of social insects (those who live in a colony)
+#   - stigmergy, shortest path, dijkstra
+#   - read up on techniques
+# 
+# 1. Place ants at city #1
+# 2. Find path for each ant
+# 3. Update pheromone intensity
+# 4. Repeat step 2 until stopping criteria
+
+# 1. Initialize parameters:
+#    - num_ants: Number of ants
+#    - num_iterations: Number of iterations
+#    - evaporation_rate: Rate at which pheromone evaporates
+#    - alpha: Pheromone influence parameter
+#    - beta: Heuristic influence parameter
+#    - Q: Pheromone deposit constant
+#    - tau0: Initial pheromone level
+#    - tau: Pheromone matrix
+#    - distance_matrix: Matrix storing distances between cities
+
+# 2. Initialize ants:
+#    - Create empty solutions for each ant
+#    - Randomly place each ant in a city
+
+# 3. Repeat for num_iterations times:
+#      a. Clear solutions of all ants
+
+#      b. Construct ant solutions:
+#         - For each ant:
+#           i. Move the ant to the next city based on pheromone and heuristic information
+#           ii. Update the solution by adding the selected city
+
+#      c. Update pheromone trails:
+#         - For each ant:
+#           i. Calculate the total distance traveled in the solution
+#           ii. Calculate the amount of pheromone to deposit: Q / total_distance
+#           iii. Update the pheromone level between cities in the solution:
+#                tau(i, j) = (1 - evaporation_rate) * tau(i, j) + deposit_amount
+
+#      d. Evaporate pheromone trails:
+#         - For each city pair (i, j):
+#           tau(i, j) = (1 - evaporation_rate) * tau(i, j)
+
+#      e. Check for best solution:
+#         - Update the global best solution if a new best solution is found
+
+# 4. Return the best solution found
