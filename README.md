@@ -2,7 +2,7 @@
 
 -   by Pineda, Lara Patricia B.
 -   algorithm logic referenced from ant colony optimization series of videos from https://www.youtube.com/@hklam2368
--   created March 2024
+-   created March 2024 in fulfillment of the requirements for the course CMSC 170: Introduction to Artificial Intelligence, under the Institute of Computer Science, University of the Philippines Los Baños.
 
 ## How to run:
 

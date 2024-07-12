@@ -3,13 +3,14 @@
 #   - aka swarm optimization
 #   - about the behavior of social insects (those who live in a colony)
 #   - stigmergy, shortest path, dijkstra
-#   - read up on techniques
 # 
+# Steps:
 # 1. Place ants at city #1
 # 2. Find path for each ant
 # 3. Update pheromone intensity
 # 4. Repeat step 2 until stopping criteria
 
+# For TSP:
 # 1. Initialize parameters:
 #    - num_ants: Number of ants
 #    - num_iterations: Number of iterations

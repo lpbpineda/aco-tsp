@@ -1,8 +1,5 @@
 import numpy as np
 
-# Ant Colony Optimization (ACO) implementation for the Traveling Salesman Problem (TSP)
-# - algorithm logic referenced from ant colony optimization series of videos from https://www.youtube.com/@hklam2368 
-
 class Ant:
     def __init__(self, num_cities, alpha, beta, distance_matrix):
         self.num_cities = num_cities
